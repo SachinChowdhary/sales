@@ -3,16 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite + React</title>
     <style>
-        #root {
-        height: 100vh;
-        background: linear-gradient(to bottom, #5e72e4 50vh, #dee2e6 50vh);
+       #root {
+        background: linear-gradient(to bottom, #5e72e4 50%, #5e72e4 50%, #f8f9fa 50%, #f8f9fa 50%);
       }
-    </style>
+      @media (max-width: 768px) {
+        #root {
+          background: linear-gradient(to bottom, #5e72e4 25%, #5e72e4 25%, #f8f9fa 20%, #f8f9fa 100%);
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+  #root {
+    background: linear-gradient(to bottom, #5e72e4 25%, #5e72e4 25%, #f8f9fa 20%, #f8f9fa 100%);
+  }
+}      
+   </style>
   </head>
-  <body>
+  <body >
     <div id="root" class=""></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
