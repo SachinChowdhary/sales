@@ -5,8 +5,8 @@ import Header from '../header/Header';
 import Footer from "../footer/Footer";
 import Navbar from "../sidenavbar/Navbar";
 import createMenu from "../../context/contextMenu";
-
-const Layout = () => {
+import PrivateRoute from "../privateRoute";
+const Layout = ({settoken}) => {
     const { menu, setMenu } = useContext(createMenu);
 
     return (
@@ -16,9 +16,11 @@ const Layout = () => {
                     <Navbar />
                 </div>
                 <div className="flex flex-col flex-1 w-full overflow-y-auto">
-                    <Header />
+                    <Header settoken={settoken} />
                     <div className="flex-1 mx-3">
-                        <Outlet />
+                        <PrivateRoute>
+                         <Outlet />
+                        </PrivateRoute>
                     </div>
                     <Footer />
                 </div>
