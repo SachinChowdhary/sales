@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import image from '../../assets/logo-ct-dark.png';
 import createMenu from '../../context/contextMenu';
 import Font from '../Font';
-import { TvMinimal, CalendarDays, CreditCard, Box, Globe, UserRound, BookCopy, Notebook } from 'lucide-react';
+import { TvMinimal, CalendarDays, CreditCard, Box, Globe, UserRound } from 'lucide-react';
 
 const Navbar = () => { 
     const { menu, setMenu } = useContext(createMenu);
@@ -17,8 +17,7 @@ const Navbar = () => {
         { name: 'Virtual Reality', path: '/virtualreality', icon: <Box size={20} className='text-[#11cdef]'/> },
         { name: 'RTL', path: '/rtl', icon: <Globe size={20} className='text-[#f5365c]'/> }, 
         { name: 'Profile', path: '/profile', icon: <UserRound size={20} className='text-[#343a40]' /> },
-        { name: 'Sign In', path: '/signin', icon: <BookCopy size={20} className='text-[#fd7e14]'/> },
-        { name: 'Sign Up', path: '/signup', icon: <Notebook size={20} className='text-[#11cdef]' /> }
+
     ];
 
     return (

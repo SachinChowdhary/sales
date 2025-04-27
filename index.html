@@ -6,20 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite + React</title>
     <style>
-       #root {
-        background: linear-gradient(to bottom, #5e72e4 50%, #5e72e4 50%, #f8f9fa 50%, #f8f9fa 50%);
-      }
-      @media (max-width: 768px) {
-        #root {
-          background: linear-gradient(to bottom, #5e72e4 25%, #5e72e4 25%, #f8f9fa 20%, #f8f9fa 100%);
-        }
-      }
-      @media (min-width: 768px) and (max-width: 1024px) {
   #root {
-    background: linear-gradient(to bottom, #5e72e4 25%, #5e72e4 25%, #f8f9fa 20%, #f8f9fa 100%);
+    background: linear-gradient(to bottom, #5e72e4 50%, #5e72e4 50%, #f8f9fa 50%, #f8f9fa 50%);
   }
-}      
-   </style>
+  #root.white-bg {
+    background: white !important;
+  }
+
+  @media (max-width: 768px) {
+    #root {
+      background: linear-gradient(to bottom, #5e72e4 25%, #5e72e4 25%, #f8f9fa 20%, #f8f9fa 100%);
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #root {
+      background: linear-gradient(to bottom, #5e72e4 25%, #5e72e4 25%, #f8f9fa 20%, #f8f9fa 100%);
+    }
+  }
+</style>
+
+  
   </head>
   <body >
     <div id="root" class=""></div>

@@ -1,11 +1,11 @@
 // Header.js
 import React, { useContext } from "react";
-import { Search, User, Menu, Settings, Bell, AlignRight } from 'lucide-react';
+import { Search, User, Menu, Settings, Bell, AlignRight, LogOut  } from 'lucide-react';
 import Font from '../Font';
 import CreateHeader from "../../context/contextHeader";
 import createMenu from "../../context/contextMenu";
 
-const Header = () => {
+const Header = ({settoken}) => {
     const { page } = useContext(CreateHeader);
     const { menu, setMenu } = useContext(createMenu);
 
@@ -44,6 +44,13 @@ const Header = () => {
                     }
                     <Settings size={20} className="text-white" />
                     <Bell size={20} className="text-white" />
+                    <LogOut size={20} className='text-white font-extrabold shadow-2xl' 
+                    onClick={
+                        ()=>{
+                            localStorage.removeItem('Token');
+                            settoken(!!localStorage.getItem('Token'))
+                        }}
+                        />
                 </div>
             </div>
         </div>
