@@ -16,7 +16,6 @@ import createMenu from './context/contextMenu.js';
 function App() {
   const [menu, setMenu] = React.useState(false)
   const [token, setToken] = React.useState(!!localStorage.getItem('Token'))
-  console.log(token,"rkefdsk")
   React.useEffect(()=>{
     const refresh=()=>{
       localStorage.removeItem('Token');

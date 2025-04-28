@@ -28,7 +28,6 @@ export default function SignUp() {
           }
         }
     }
-    console.log(message,"jdvn")
     React.useEffect(()=>{
     const root = document.getElementById('root')
     root.classList.add('white-bg')
