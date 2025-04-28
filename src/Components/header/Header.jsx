@@ -21,7 +21,7 @@ const Header = ({settoken}) => {
                     <input 
                         type="text" 
                         placeholder="Type here..." 
-                        className="border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none pl-8 w-36 h-9"
+                        className="border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none pl-8 w-36 h-9 placeholder:font-serif"
                     />
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#495057]" size={15} />
                 </div>
@@ -31,13 +31,13 @@ const Header = ({settoken}) => {
                     <input 
                         type="text" 
                         placeholder="Type here..." 
-                        className="border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none pl-10 w-36 h-9"
+                        className="border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none pl-10 w-36 h-9 placeholder:font-serif"
                     />
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#495057]" size={20} />
                 </div>
                 <div className="grid grid-flow-col sm:items-center sm:gap-4 gap-2">
                     <User size={20} className="text-white" />
-                    <span className="hidden sm:block text-white">Sign In</span>
+                    <Font className="hidden sm:block text-white">Sign In</Font>
                     {menu ? 
                         <AlignRight size={20} className="text-white block xl:hidden" onClick={() => setMenu(!menu)} /> : 
                         <Menu size={20} className="text-white block xl:hidden" onClick={() => setMenu(!menu)} />

@@ -28,22 +28,22 @@ export default function Dashboard() {
                 <Font className='text-[#67748e]'>{item.address.street}</Font>
                 <Font className='font-medium text-[18px]'>${item.address.geo.lat}</Font>
               </div>
-              <div>{item.id}</div>
+              <Font>{item.id}</Font>
             </div>
             <div className="flex lg:flex-col">
-              <div>{Math.abs(parseInt(item.address.geo.lng))}</div>
-              <div>fdhg</div>
+              <Font>{Math.abs(parseInt(item.address.geo.lng))}</Font>
+              <Font>fdhg</Font>
             </div>
           </div>
         ))}
       </div>
 
       <div className='grid gap-5 mt-5 lg:grid-cols-12'>
-        <div className="lg:col-span-6">salesoverview</div>
-        <div className="lg:col-span-6">Slider</div>
+        <Font className="lg:col-span-6">salesoverview</Font>
+        <Font className="lg:col-span-6">Slider</Font>
       </div>
 
-      <div>sales by country and sales by category</div>
+      <Font>sales by country and sales by category</Font>
     </div>
   );
 }
