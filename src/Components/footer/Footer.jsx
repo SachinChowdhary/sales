@@ -7,10 +7,10 @@ const Footer = () => {
     return (
         <div className="m-4 grid gap-3 sm:justify-center sm:items-center md:justify-center md:items-center lg:flex lg:justify-between lg:m-3">
             <div className="h-10 text-white md:grid">
-                <p className="text-[#67748e] font-serif text-center">
-                    © 2024, made with <span className="text-[20px] font-serif">{`\u2665`}</span> by 
-                    <Link to="/" className="hover:text-[#5e72e4] font-serif"> Creative Tim </Link> 
-                    for a <span className="text-[#67748e] font-serif">better web.</span>
+                <p className="text-[#67748e] font-Open Sans, sans-serif text-center">
+                    © 2024, made with <span className="text-[20px] font-Open Sans, sans-serif">{`\u2665`}</span> by 
+                    <Link to="/" className="hover:text-[#5e72e4] font-Open Sans, sans-serif"> Creative Tim </Link> 
+                    for a <span className="text-[#67748e] font-Open Sans, sans-serif">better web.</span>
                 </p>
             </div>
 
