@@ -1,6 +1,6 @@
 const Font = ({ children, className }) => {
     return (
-      <div className={`font-serif ${className}`}>
+      <div className={`font-Open Sans, sans-serif ${className}`}>
         {children}
       </div>
     );

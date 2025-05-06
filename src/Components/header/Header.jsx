@@ -10,7 +10,7 @@ const Header = ({settoken}) => {
     const { menu, setMenu } = useContext(createMenu);
 
     return (
-        <div className="pt-3 sm:pt-4 grid items-center rounded-xl pl-3 pr-3 grid-cols-2">
+        <div className="pt-3 sm:pt-4 grid items-center rounded-xl mr-10 ml-10 mt-4 grid-cols-2">
             <div className="cols-1">
                 <div className="flex gap-2">
                     <Font className="text-[#adb5bd] font-medium text-sm">{`Pages /`}</Font>
